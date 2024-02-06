@@ -29,6 +29,7 @@ struct ListRowView: View {
                         //                .foregroundStyle(item.isCompleted ? .green.opacity(0.8) : .black)
                     
             }
+
         }
     }
 }

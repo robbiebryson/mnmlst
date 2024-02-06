@@ -17,23 +17,27 @@ struct ListView: View {
     var body: some View {
       
         
-        VStack {
-            List {
-                ForEach(listViewModel.items) { item in
-                    ListRowView(item: item)
-                        .listRowSeparator(/*@START_MENU_TOKEN@*/.hidden/*@END_MENU_TOKEN@*/)
-                        .onTapGesture {
-                            withAnimation(.linear) {
-                                listViewModel.updateItem(item: item)
+        ZStack {
+            VStack {
+                    
+                List {
+                    ForEach(listViewModel.items) { item in
+                        ListRowView(item: item)
+                            .listRowSeparator(/*@START_MENU_TOKEN@*/.hidden/*@END_MENU_TOKEN@*/)
+                            .onTapGesture {
+                                withAnimation(.linear) {
+                                    listViewModel.updateItem(item: item)
+                                }
                             }
-                        }
+                    }
+                    .onDelete(perform: listViewModel.deleteItem)
+                    .onMove(perform: listViewModel.moveItem)
                 }
-                .onDelete(perform: listViewModel.deleteItem)
-                .onMove(perform: listViewModel.moveItem)
+                .scenePadding()
+                .listStyle(.plain)
+                AddView()
+               Spacer(minLength: 50)
             }
-            .listStyle(.plain)
-            AddView()
-           Spacer(minLength: 50)
         }
 
    
