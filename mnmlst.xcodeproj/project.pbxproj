@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8CC6763B2B719A55002687D3 /* mnmlstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6763A2B719A55002687D3 /* mnmlstApp.swift */; };
-		8CC6763D2B719A55002687D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6763C2B719A55002687D3 /* ContentView.swift */; };
 		8CC6763F2B719A57002687D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC6763E2B719A57002687D3 /* Assets.xcassets */; };
 		8CC676422B719A57002687D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC676412B719A57002687D3 /* Preview Assets.xcassets */; };
 		8CC6764C2B719A57002687D3 /* mnmlstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6764B2B719A57002687D3 /* mnmlstTests.swift */; };
 		8CC676562B719A57002687D3 /* mnmlstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC676552B719A57002687D3 /* mnmlstUITests.swift */; };
 		8CC676582B719A57002687D3 /* mnmlstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC676572B719A57002687D3 /* mnmlstUITestsLaunchTests.swift */; };
+		8CC676682B719B02002687D3 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC676672B719B02002687D3 /* ItemModel.swift */; };
+		8CC6766A2B719BEE002687D3 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC676692B719BEE002687D3 /* ListViewModel.swift */; };
+		8CC6766C2B71A4F0002687D3 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6766B2B71A4F0002687D3 /* ListRowView.swift */; };
+		8CC6766E2B71A912002687D3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6766D2B71A912002687D3 /* ListView.swift */; };
+		8CC676702B71AF78002687D3 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6766F2B71AF78002687D3 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		8CC676372B719A55002687D3 /* mnmlst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnmlst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC6763A2B719A55002687D3 /* mnmlstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnmlstApp.swift; sourceTree = "<group>"; };
-		8CC6763C2B719A55002687D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CC6763E2B719A57002687D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC676412B719A57002687D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CC676472B719A57002687D3 /* mnmlstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mnmlstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		8CC676512B719A57002687D3 /* mnmlstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mnmlstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC676552B719A57002687D3 /* mnmlstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnmlstUITests.swift; sourceTree = "<group>"; };
 		8CC676572B719A57002687D3 /* mnmlstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnmlstUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CC676672B719B02002687D3 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		8CC676692B719BEE002687D3 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8CC6766B2B71A4F0002687D3 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		8CC6766D2B71A912002687D3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		8CC6766F2B71AF78002687D3 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				8CC6763A2B719A55002687D3 /* mnmlstApp.swift */,
-				8CC6763C2B719A55002687D3 /* ContentView.swift */,
+				8CC676642B719A71002687D3 /* Models */,
+				8CC676652B719A8E002687D3 /* Views */,
+				8CC676662B719AB0002687D3 /* ViewModels */,
 				8CC6763E2B719A57002687D3 /* Assets.xcassets */,
 				8CC676402B719A57002687D3 /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				8CC676572B719A57002687D3 /* mnmlstUITestsLaunchTests.swift */,
 			);
 			path = mnmlstUITests;
+			sourceTree = "<group>";
+		};
+		8CC676642B719A71002687D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CC676672B719B02002687D3 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CC676652B719A8E002687D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CC6766B2B71A4F0002687D3 /* ListRowView.swift */,
+				8CC6766D2B71A912002687D3 /* ListView.swift */,
+				8CC6766F2B71AF78002687D3 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CC676662B719AB0002687D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8CC676692B719BEE002687D3 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC6763D2B719A55002687D3 /* ContentView.swift in Sources */,
+				8CC676682B719B02002687D3 /* ItemModel.swift in Sources */,
+				8CC6766C2B71A4F0002687D3 /* ListRowView.swift in Sources */,
+				8CC676702B71AF78002687D3 /* AddView.swift in Sources */,
+				8CC6766E2B71A912002687D3 /* ListView.swift in Sources */,
+				8CC6766A2B719BEE002687D3 /* ListViewModel.swift in Sources */,
 				8CC6763B2B719A55002687D3 /* mnmlstApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = imac24.mnmlst;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac24.mnmlst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = imac24.mnmlst;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac24.mnmlst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
