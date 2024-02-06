@@ -17,16 +17,18 @@ struct ListView: View {
     var body: some View {
       
         
-        ZStack {
+        ZStack { Color.green.opacity(0.2).ignoresSafeArea()
             VStack {
-                    
+         Spacer(minLength: 50)
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
                             .listRowSeparator(/*@START_MENU_TOKEN@*/.hidden/*@END_MENU_TOKEN@*/)
+                            .listRowBackground(Color.green.opacity(0.0))
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item)
+                                
                                 }
                             }
                     }
@@ -36,8 +38,9 @@ struct ListView: View {
                 .scenePadding()
                 .listStyle(.plain)
                 AddView()
-               Spacer(minLength: 50)
+               Spacer(minLength: 100)
             }
+                
         }
 
    

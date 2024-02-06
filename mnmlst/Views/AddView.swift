@@ -26,6 +26,8 @@ struct AddView: View {
         HStack {
             TextField("Type something here...", text: $textFieldText)
                 .font(.title2)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.pink/*@END_MENU_TOKEN@*/)
+                
 //            Button(action: {
 //                presentationMode.wrappedValue.dismiss()
 //            }, label: {

@@ -15,18 +15,17 @@ struct ListRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: item.isCompleted ? "circle.fill" : "circle")
+                Image(systemName: "circle")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    
+                    .foregroundStyle(item.isCompleted ? .white : .green)
+                    .background(item.isCompleted ? .green : .white)
                     .cornerRadius(100)
-                   
-                        //                .foregroundStyle(item.isCompleted ? .white : .green)
-                        
-                        //                .background(item.isCompleted ? .green : .white)
-                        
-                        Text(item.title)
+
+                Text(item.title)
                             .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                             .fontWeight(.semibold)
-                        //                .foregroundStyle(item.isCompleted ? .green.opacity(0.8) : .black)
+                            .foregroundStyle(item.isCompleted ? .green.opacity(0.8) : .black)
                     
             }
 
