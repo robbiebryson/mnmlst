@@ -42,7 +42,7 @@ struct AddView: View {
             }, label: {
                 Image(systemName: "plus.circle")
                     .foregroundStyle(.green)
-                    .font(.title)
+                    .font(.largeTitle)
             })
         }
         .padding(.horizontal, 45)
