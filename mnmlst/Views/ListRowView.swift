@@ -25,7 +25,7 @@ struct ListRowView: View {
                 Text(item.title)
                             .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                             .fontWeight(.semibold)
-                            .foregroundStyle(item.isCompleted ? .green.opacity(0.8) : .black)
+                            .foregroundStyle(item.isCompleted ? .green.opacity(0.8) : .primary)
                     
             }
 

@@ -19,6 +19,7 @@ struct AddView: View {
     
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
+//    @State var showTextField: Bool
  
     
 
@@ -26,14 +27,15 @@ struct AddView: View {
         HStack {
             TextField("Type something here...", text: $textFieldText)
                 .font(.title2)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.pink/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.orange)
+//                .opacity(showTextField ? 1 : 0)
                 
 //            Button(action: {
 //                presentationMode.wrappedValue.dismiss()
 //            }, label: {
 //                Image(systemName: "plus.circle")
 //                    .foregroundStyle(.red)
-//                    .font(.title)
+//                    .font(.largeTitle)
 //                    .rotationEffect(.degrees(45))
 //                    
 //            })
@@ -52,6 +54,7 @@ struct AddView: View {
     func saveButtonPressed() {
         listViewModel.addItem(title: textFieldText)
         textFieldText = ""
+//        showTextField = false
         presentationMode.wrappedValue.dismiss()
     }
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "14E94466-BB64-4BA3-911A-2150DD3C14C0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2F4963F-2A1A-4E66-B453-FA19BABEB797"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mnmlst/ViewModels/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "ListViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C2F4963F-2A1A-4E66-B453-FA19BABEB797 - f008251ed3d889e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mnmlst.ListViewModel.deleteTheItem() -&gt; ()"
+                  moduleName = "mnmlst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robbryson/Library/Mobile%20Documents/com~apple~CloudDocs/mnmlst/mnmlst/ViewModels/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "C2F4963F-2A1A-4E66-B453-FA19BABEB797 - f008251ed3d889e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mnmlst.ListViewModel.deleteTheItem() -&gt; ()"
+                  moduleName = "mnmlst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robbryson/Library/Mobile%20Documents/com~apple~CloudDocs/mnmlst/mnmlst/ViewModels/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

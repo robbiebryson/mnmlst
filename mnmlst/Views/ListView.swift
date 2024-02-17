@@ -15,11 +15,11 @@ struct ListView: View {
     @State var isHidden = false
     
     var body: some View {
-      
+        
         
         ZStack { Color.green.opacity(0.2).ignoresSafeArea()
             VStack {
-         Spacer(minLength: 50)
+                Spacer(minLength: 50)
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
@@ -28,25 +28,35 @@ struct ListView: View {
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item)
-                                
+                                    
                                 }
                             }
+                       
                     }
                     .onDelete(perform: listViewModel.deleteItem)
-                    .onMove(perform: listViewModel.moveItem)
+//                    .onMove(perform: listViewModel.moveItem)
                 }
                 .scenePadding()
                 .listStyle(.plain)
+//                            Button(action: {
+//                                listViewModel.deleteTheItem()
+//                            }, label: {
+//                                Image(systemName: "plus.circle")
+//                                    .foregroundStyle(.red)
+//                                    .font(.largeTitle)
+//                                    .rotationEffect(.degrees(45))
+//                
+//                            })
                 AddView()
-               Spacer(minLength: 100)
+                Spacer(minLength: 100)
             }
-                
+            
         }
-
-   
+        
+        
     }
+    
 }
-
 
 #Preview {
         ListView()
