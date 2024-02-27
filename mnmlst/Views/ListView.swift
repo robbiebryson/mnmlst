@@ -19,7 +19,7 @@ struct ListView: View {
         
         ZStack { Color.green.opacity(0.2).ignoresSafeArea()
             VStack {
-                Spacer(minLength: 50)
+                Spacer()
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
@@ -36,6 +36,7 @@ struct ListView: View {
                     .onDelete(perform: listViewModel.deleteItem)
 //                    .onMove(perform: listViewModel.moveItem)
                 }
+                .scrollIndicators(.hidden)
                 .scrollDismissesKeyboard(.interactively)
                 .scenePadding()
                 .listStyle(.plain)
@@ -49,7 +50,8 @@ struct ListView: View {
 //                
 //                            })
                 AddView()
-                Spacer(minLength: 100)
+                Spacer()
+                    .persistentSystemOverlays(.hidden)
             }
             
         }
