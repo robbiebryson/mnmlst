@@ -16,7 +16,7 @@ struct AddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
-    
+    @FocusState private var isFocused : Bool
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
 //    @State var showTextField: Bool
@@ -27,7 +27,8 @@ struct AddView: View {
         HStack {
             TextField("Type something here...", text: $textFieldText)
                 .font(.title2)
-                .foregroundColor(.orange)
+                .foregroundColor(.pink)
+                .focused($isFocused)
 //                .opacity(showTextField ? 1 : 0)
                 
 //            Button(action: {
@@ -41,6 +42,7 @@ struct AddView: View {
 //            })
             Button(action: {
                 saveButtonPressed()
+                isFocused = false
             }, label: {
                 Image(systemName: "plus.circle")
                     .foregroundStyle(.green)

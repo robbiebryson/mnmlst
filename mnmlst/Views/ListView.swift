@@ -36,6 +36,7 @@ struct ListView: View {
                     .onDelete(perform: listViewModel.deleteItem)
 //                    .onMove(perform: listViewModel.moveItem)
                 }
+                .scrollDismissesKeyboard(.interactively)
                 .scenePadding()
                 .listStyle(.plain)
 //                            Button(action: {
