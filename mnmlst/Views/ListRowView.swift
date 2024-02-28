@@ -32,14 +32,14 @@ struct ListRowView: View {
         }
     }
 }
-#Preview {
-    var item1 = ItemModel(title: "First Item", isCompleted: false)
-    var item2 = ItemModel(title: "Second", isCompleted: true)
-    
-    return Group {
-        ListRowView(item: item1)
-        ListRowView(item: item2)
-            .environmentObject(ListViewModel())
-
-    }
-}
+//#Preview {
+//    let item1 = ItemModel(title: "First Item", isCompleted: false)
+//    let item2 = ItemModel(title: "Second", isCompleted: true)
+//    
+//    return Group {
+//        ListRowView(item: item1)
+//        ListRowView(item: item2)
+//            .environmentObject(ListViewModel())
+//
+//    }
+//}

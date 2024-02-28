@@ -15,11 +15,9 @@ struct ListView: View {
     @State var isHidden = false
     
     var body: some View {
-        
-        
         ZStack { Color.green.opacity(0.2).ignoresSafeArea()
             VStack {
-                Spacer()
+//                Spacer()
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
@@ -28,10 +26,8 @@ struct ListView: View {
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item)
-                                    
-                                }
                             }
-                       
+                        }
                     }
                     .onDelete(perform: listViewModel.deleteItem)
 //                    .onMove(perform: listViewModel.moveItem)
@@ -52,13 +48,10 @@ struct ListView: View {
                 AddView()
                 Spacer()
                     .persistentSystemOverlays(.hidden)
+
             }
-            
         }
-        
-        
     }
-    
 }
 
 #Preview {
