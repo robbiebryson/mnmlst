@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8D67162BB109F500D4A1EC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D67152BB109F500D4A1EC /* Theme.swift */; };
 		8CC6763B2B719A55002687D3 /* mnmlstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6763A2B719A55002687D3 /* mnmlstApp.swift */; };
 		8CC6763F2B719A57002687D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC6763E2B719A57002687D3 /* Assets.xcassets */; };
 		8CC676422B719A57002687D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC676412B719A57002687D3 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C8D67152BB109F500D4A1EC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8CC676372B719A55002687D3 /* mnmlst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mnmlst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC6763A2B719A55002687D3 /* mnmlstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnmlstApp.swift; sourceTree = "<group>"; };
 		8CC6763E2B719A57002687D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC676672B719B02002687D3 /* ItemModel.swift */,
+				8C8D67152BB109F500D4A1EC /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				8CC6766E2B71A912002687D3 /* ListView.swift in Sources */,
 				8CC6766A2B719BEE002687D3 /* ListViewModel.swift in Sources */,
 				8CC6763B2B719A55002687D3 /* mnmlstApp.swift in Sources */,
+				8C8D67162BB109F500D4A1EC /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

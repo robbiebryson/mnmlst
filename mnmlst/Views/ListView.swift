@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ListView: View {
-    
+    let theme : Theme
     
     @EnvironmentObject var listViewModel: ListViewModel
     
     @State var isHidden = false
     
     var body: some View {
-        ZStack { Color.green.opacity(0.2).ignoresSafeArea()
+        ZStack { theme.mainColor.ignoresSafeArea()
             VStack {
-//                Spacer()
+
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
@@ -30,21 +30,13 @@ struct ListView: View {
                         }
                     }
                     .onDelete(perform: listViewModel.deleteItem)
-//                    .onMove(perform: listViewModel.moveItem)
+
                 }
                 .scrollIndicators(.hidden)
                 .scrollDismissesKeyboard(.interactively)
                 .scenePadding()
                 .listStyle(.plain)
-//                            Button(action: {
-//                                listViewModel.deleteTheItem()
-//                            }, label: {
-//                                Image(systemName: "plus.circle")
-//                                    .foregroundStyle(.red)
-//                                    .font(.largeTitle)
-//                                    .rotationEffect(.degrees(45))
-//                
-//                            })
+                   
                 AddView()
                 Spacer()
                     .persistentSystemOverlays(.hidden)
@@ -55,6 +47,6 @@ struct ListView: View {
 }
 
 #Preview {
-        ListView()
+    ListView(theme: .seafoam)
     .environmentObject(ListViewModel())
 }
