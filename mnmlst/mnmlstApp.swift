@@ -14,7 +14,7 @@ struct mnmlstApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ListView(theme: .seafoam)
+            ListView(/*theme: .seafoam*/)
             .environmentObject(listViewModel)
         }
     }

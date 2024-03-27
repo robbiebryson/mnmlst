@@ -19,6 +19,10 @@ struct AddView: View {
     @FocusState private var isFocused : Bool
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
+    @State private var showingSheet = false
+    private var colorData = ColorData()
+    @State private var color: Color = Color.green
+
 //    @State var showTextField: Bool
  
     
@@ -45,12 +49,18 @@ struct AddView: View {
                 isFocused = false
             }, label: {
                 Image(systemName: "plus.circle")
-                    .foregroundStyle(.green)
+                    .foregroundStyle(color.opacity(10))
                     .font(.largeTitle)
             })
         }
+       
+        .onAppear {
+            color = colorData.loadColor()
+            
+        }
         .padding(.horizontal, 45)
     }
+    
     
     
     func saveButtonPressed() {

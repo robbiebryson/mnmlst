@@ -11,7 +11,10 @@ struct ListRowView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     
     let item: ItemModel
-    
+//    @State private var showingSheet = false
+//    private var colorData = ColorData()
+//    @State private var color: Color = Color.green
+
     var body: some View {
         VStack {
             HStack {
@@ -30,6 +33,9 @@ struct ListRowView: View {
             }
 
         }
+//        .onAppear {
+//            color = colorData.loadColor()
+//        }
     }
 }
 //#Preview {

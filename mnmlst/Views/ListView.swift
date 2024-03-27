@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct ListView: View {
-    let theme : Theme
+//    let theme : Theme
     
     @EnvironmentObject var listViewModel: ListViewModel
-    
+    @State private var color: Color = Color.black
     @State var isHidden = false
-    
+    @State private var showingSheet = false
+    private var colorData = ColorData()
+
     var body: some View {
-        ZStack { theme.mainColor.ignoresSafeArea()
+        ZStack { color.ignoresSafeArea()
             VStack {
 
                 List {
                     ForEach(listViewModel.items) { item in
                         ListRowView(item: item)
                             .listRowSeparator(/*@START_MENU_TOKEN@*/.hidden/*@END_MENU_TOKEN@*/)
-                            .listRowBackground(Color.green.opacity(0.0))
+                            .listRowBackground(color.opacity(0.0))
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item)
@@ -36,17 +38,28 @@ struct ListView: View {
                 .scrollDismissesKeyboard(.interactively)
                 .scenePadding()
                 .listStyle(.plain)
+                
+                Button("Settings") {
+                    showingSheet.toggle()
+                }
+                .sheet(isPresented: $showingSheet) {
+                    SettingsSheetView()
+                }
                    
                 AddView()
                 Spacer()
                     .persistentSystemOverlays(.hidden)
 
             }
+            .onAppear {
+                color = colorData.loadColor()
+            }
         }
     }
 }
 
 #Preview {
-    ListView(theme: .seafoam)
-    .environmentObject(ListViewModel())
+    ListView()
+        .environmentObject(ListViewModel())
+    
 }

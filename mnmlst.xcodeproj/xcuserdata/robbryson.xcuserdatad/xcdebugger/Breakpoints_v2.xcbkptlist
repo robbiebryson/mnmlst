@@ -18,38 +18,6 @@
             endingLineNumber = "62"
             landmarkName = "ListViewModel"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "C2F4963F-2A1A-4E66-B453-FA19BABEB797 - f008251ed3d889e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mnmlst.ListViewModel.deleteTheItem() -&gt; ()"
-                  moduleName = "mnmlst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robbryson/Library/Mobile%20Documents/com~apple~CloudDocs/mnmlst/mnmlst/ViewModels/ListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "C2F4963F-2A1A-4E66-B453-FA19BABEB797 - f008251ed3d889e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mnmlst.ListViewModel.deleteTheItem() -&gt; ()"
-                  moduleName = "mnmlst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robbryson/Library/Mobile%20Documents/com~apple~CloudDocs/mnmlst/mnmlst/ViewModels/ListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "396">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
